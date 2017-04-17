@@ -1,9 +1,11 @@
 """
 Command Line Interface
 """
+import os
 import sys
 import argparse
 import logging
+from sqlg.generator import Generator
 
 logger = logging.getLogger(__name__)
 
@@ -53,3 +55,14 @@ class CommandLineInterface(object):
         )
 
         logger.info('Starting sql...')
+        filename = args.filename
+        filepath = os.getcwd() + '/{}'.format(filename)
+        folderpath = "/".join(filepath.split("/")[:-1])
+
+        # Check folder exists
+        if os.path.isdir(folderpath):
+            generator = Generator(folderpath, filepath)
+            generator.handler()
+
+        else:
+            raise ValueError("Please give correct folder name")
