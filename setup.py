@@ -3,7 +3,7 @@ from setuptools import setup
 
 setup(
     name='sqlg',
-    version='0.0',
+    version=__version__,
     author='Raja Simon',
     author_email='rajasimon@icloud.com',
     packages=['sqlg'],

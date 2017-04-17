@@ -1,5 +1,8 @@
 # sqlg
-Standardized Query Language Generator
+Standardized Query Language Generator.
+
+Documentation, installation and getting started instructions are at [https://sqlg.readthedocs.io](https://channels.readthedocs.io)
+
 
 ### How to use
 
