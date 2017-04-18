@@ -1,8 +1,9 @@
 Welcome to sqlg's documentation!
 ================================
 
-`sqlg` is very useful where you want to create tables and  generate rows automatically.
-Configuration is fairly simple it's just the JSON files.
+`Standardized Query Language Generator` is a Command line tool to automate or create
+sample database entries for your tables. It's very useful where creating tables 
+and generate rows automatically. 
 
 The 
 
