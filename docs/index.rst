@@ -5,9 +5,10 @@ Welcome to sqlg's documentation!
 sample database entries for your tables. It's very useful where creating tables 
 and generate rows automatically. 
 
-The 
-
 .. toctree::
    :maxdepth: 2
    
    getting-started
+   sample-json
+   row-properties
+   column-properties
