@@ -7,4 +7,4 @@
 sample database entries for your tables. It's very useful where creating tables 
 and generate rows automatically. 
 
-Documentation, installation and getting started instructions are at [https://sqlg.readthedocs.io](https://channels.readthedocs.io)
+Documentation, installation and getting started instructions are at [https://sqlg.readthedocs.io](https://sqlg.readthedocs.io)
