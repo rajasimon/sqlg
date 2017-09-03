@@ -1,2 +1,8 @@
 *.pyc
+*.sqlite3
 .venv/
+.vscode/
+*.egg-info/
+dist/
+build/
+docs/_build
