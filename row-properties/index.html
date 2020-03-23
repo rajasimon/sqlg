@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Row Properties - sqlg</title>
+    <link rel="stylesheet" href="../assets/css/bulma.min.css">
+  </head>
+  <body>
+    <nav class="navbar has-shadow is-transparent">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="/">
+      <h1 class="title">sqlg</h1>
+    </a>
+    <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+  <div id="navbarExampleTransparentExample" class="navbar-menu">
+    <div class="navbar-start">
+      
+        
+          <a class="navbar-item" href="">
+            Home
+          </a>
+        
+      
+        
+          <a class="navbar-item" href="column-properties/">
+            Column Properties
+          </a>
+        
+      
+        
+          <a class="navbar-item" href="row-properties/">
+            Row Properties
+          </a>
+        
+      
+        
+          <a class="navbar-item" href="sample/">
+            Sample Json
+          </a>
+        
+      
+    </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="field is-grouped">
+          <p class="control">
+            <a class="bd-tw-button button" data-social-network="Twitter" data-social-action="tweet" data-social-target="http://localhost:4000" target="_blank" href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=http://localhost:4000&amp;via=jgthms">
+              <span class="icon">
+                <i class="fab fa-twitter"></i>
+              </span>
+              <span>
+                Tweet
+              </span>
+            </a>
+          </p>
+          <p class="control">
+            <a class="button is-primary" href="https://github.com/jgthms/bulma/releases/download/0.7.1/bulma-0.7.1.zip">
+              <span class="icon">
+                <i class="fas fa-download"></i>
+              </span>
+              <span>Download</span>
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-one-quarter">
+            <aside class="menu">
+  
+    <p class="menu-label">
+      Row Properties
+    </p>
+
+    
+      <ul class="menu-list">
+        <li><a href="#row-properties">Row Properties</a>
+  
+    <ul>
+      
+        <li><a href="#bigint">bigint</a>
+  
+</li>
+      
+        <li><a href="#varchar">varchar</a>
+  
+</li>
+      
+        <li><a href="#datetime">datetime</a>
+  
+</li>
+      
+    </ul>
+  
+</li>
+      </ul>
+    
+  
+</aside>
+          </div>
+          <div class="column">
+            <div class="content">
+               <h1 id="row-properties">Row Properties</h1>
+<h2 id="bigint">bigint</h2>
+<pre><code>row_type: fixed
+value: int(???)
+
+row_type: random
+    method: from_any
+    length: int(?)
+
+    method: from_list
+    length: [???]
+</code></pre>
+<h2 id="varchar">varchar</h2>
+<pre><code>row_type: fixed
+value = str(??)
+
+row_type: random
+    method: from_any
+    length: int(?)
+
+    method: from_list
+    length: [???]
+</code></pre>
+<h2 id="datetime">datetime</h2>
+<pre><code>row_type: fixed
+value = datetime()
+
+row_type: date_now
+
+row_type: date_between
+value_1: datetime()
+value_2: datetime()
+</code></pre> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
